@@ -27,6 +27,8 @@
     <spring-boot.version>2.7.5</spring-boot.version>
     <reflections.version>0.10.2</reflections.version>
     <archunit-junit5.version>1.0.0</archunit-junit5.version>
+    <kafka.version>3.3.1</kafka.version>
+    <avro.version>1.11.1</avro.version>
   </properties>
 
   <dependencyManagement>
@@ -42,6 +44,18 @@
   </dependencyManagement>
 
   <dependencies>
+
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka-clients</artifactId>
+      <version>${kafka.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.avro</groupId>
+      <artifactId>avro</artifactId>
+      <version>${avro.version}</version>
+    </dependency>
 
     <dependency>
       <groupId>org.springframework.boot</groupId>

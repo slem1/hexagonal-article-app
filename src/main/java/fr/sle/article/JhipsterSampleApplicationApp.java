@@ -8,6 +8,8 @@ import org.springframework.core.env.Environment;
 
 import fr.sle.article.common.domain.Generated;
 
+import java.util.Properties;
+
 @SpringBootApplication
 @Generated(reason = "Not testing logs")
 public class JhipsterSampleApplicationApp {
@@ -15,7 +17,12 @@ public class JhipsterSampleApplicationApp {
   private static final Logger log = LoggerFactory.getLogger(JhipsterSampleApplicationApp.class);
 
   public static void main(String[] args) {
-    Environment env = SpringApplication.run(JhipsterSampleApplicationApp.class, args).getEnvironment();
+    final SpringApplication springApplication = new SpringApplication(JhipsterSampleApplicationApp.class);
+    Properties properties = new Properties();
+    properties.setProperty("enable.kafka", "false");
+    springApplication.setDefaultProperties(properties);
+    Environment env = springApplication.run(args).getEnvironment();
+
 
     if (log.isInfoEnabled()) {
       log.info(ApplicationStartupTraces.of(env));
