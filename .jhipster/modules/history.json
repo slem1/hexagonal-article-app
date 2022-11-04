@@ -9,5 +9,15 @@
       "endOfLine" : "lf",
       "indentSize" : 2
     }
+  }, {
+    "module" : "maven-java",
+    "date" : "2022-11-04T16:28:25.857081Z",
+    "properties" : {
+      "packageName" : "fr.sle.article",
+      "projectName" : "jhipster-article-app",
+      "baseName" : "jhipsterSampleApplication",
+      "endOfLine" : "lf",
+      "indentSize" : 2
+    }
   } ]
 }
