@@ -51,5 +51,16 @@
       "indentSize" : 2,
       "serverPort" : 8080
     }
+  }, {
+    "module" : "java-archunit",
+    "date" : "2022-11-04T16:30:11.388047Z",
+    "properties" : {
+      "packageName" : "fr.sle.article",
+      "projectName" : "jhipster-article-app",
+      "baseName" : "jhipsterSampleApplication",
+      "endOfLine" : "lf",
+      "indentSize" : 2,
+      "serverPort" : 8080
+    }
   } ]
 }

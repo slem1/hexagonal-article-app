@@ -26,6 +26,7 @@
     <failsafe-plugin.version>3.0.0-M5</failsafe-plugin.version>
     <spring-boot.version>2.7.5</spring-boot.version>
     <reflections.version>0.10.2</reflections.version>
+    <archunit-junit5.version>1.0.0</archunit-junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -78,6 +79,13 @@
       <groupId>org.reflections</groupId>
       <artifactId>reflections</artifactId>
       <version>${reflections.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.tngtech.archunit</groupId>
+      <artifactId>archunit-junit5-api</artifactId>
+      <version>${archunit-junit5.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
