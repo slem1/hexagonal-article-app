@@ -1,0 +1,13 @@
+{
+  "actions" : [ {
+    "module" : "init",
+    "date" : "2022-11-04T16:28:25.221030Z",
+    "properties" : {
+      "packageName" : "fr.sle.article",
+      "projectName" : "jhipster-article-app",
+      "baseName" : "jhipsterSampleApplication",
+      "endOfLine" : "lf",
+      "indentSize" : 2
+    }
+  } ]
+}
